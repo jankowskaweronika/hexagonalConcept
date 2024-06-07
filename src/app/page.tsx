@@ -1,7 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+import { createApplication } from "../../application/createApplication";
+
+const app = createApplication()
+
 export default function Home() {
+  console.log(app)
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
