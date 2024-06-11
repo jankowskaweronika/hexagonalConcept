@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 
 const myButton= () => {
   return (
-    <Button variant="contained">Contained</Button>
+    <Button variant="contained">Add task</Button>
   )
 }
 
