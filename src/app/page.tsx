@@ -1,11 +1,11 @@
-import Button from '../ui/components/button'
-import Input from '../ui/components/input'
+import AddTask from "@/ui/components/AddTask"
+import ToDoList from "@/ui/components/ToDoList"
 
 const page = () => {
   return (
     <>
-      <Input />
-      <Button />
+      <AddTask />
+      <ToDoList />
     </>
   )
 }
