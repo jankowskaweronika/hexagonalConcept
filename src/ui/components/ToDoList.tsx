@@ -13,14 +13,14 @@ const tasks = [
 
 const ToDoList = () => {
   return (
-    <Table sx={{ width: 650 }}>
+    <Table sx={{ minWidth: 650 }} aria-label="caption table">
       <TableBody>
         {tasks.map((task) => (
           <TableRow key={task.taskId}>
-            <TableCell>
+            <TableCell component="th" scope="row">
               {task.taskId}
             </TableCell>
-            <TableCell>{task.tasks}</TableCell>
+            <TableCell align="right">{task.tasks}</TableCell>
           </TableRow>
         ))}
       </TableBody>
